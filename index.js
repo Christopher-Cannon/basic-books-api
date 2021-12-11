@@ -1,5 +1,6 @@
 const Joi = require("joi");
 const books = require("./books-testing.json");
+const cors = require("cors");
 const express = require("express");
 const app = express();
 require("dotenv").config();
@@ -26,6 +27,11 @@ function validateBook(book) {
   return schema.validate(book);
 }
 
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5500",
+  })
+)
 app.use(express.json());
 
 app.get("/", (req, res) => {

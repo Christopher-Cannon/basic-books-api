@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Books API</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Basic Books API</h1>
+
+  <div>
+    <input
+      type="text"
+      id="book-id"
+      pattern="[0-9]{1,4}"
+      title="Integer of 1-4 digits"
+      value="1"
+      placeholder="Book ID"
+    >
+    <button id="get-one-book">Get ONE book</button>
+    <button id="get-all-books">Get ALL books</button>
+  </div>
+
+  <div id="app"></div>
+</body>
+</html>

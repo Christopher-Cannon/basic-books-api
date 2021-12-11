@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, 
+    minmax(10rem, 1fr)
+  );
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.books-container .book-link {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-container {
+  margin: 1rem auto;
+  width: 60%;
+}
+
+.book-container .book-link {
+  display: flex;
+}
+
+.book-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.book-title,
+.book-author,
+.book-pages,
+.book-country,
+.book-language,
+.book-year {
+  color: white;
+  margin: 0;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-author {
+  color: #BBB;
+}
+
+.book-pages {
+  border-top: 2px solid white;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
